@@ -1,0 +1,11 @@
+eyebrow: Say hello
+title: Get in touch
+lede: Questions, collaborations, press, or just want to say hi, please reach out any time by email or on Instagram!
+
+contact_methods:
+  - header: Email
+    text: hello.taisch@gmail.com
+    url: mailto:hello.taisch@gmail.com
+  - header: Instagram
+    text: "@humans_of_taisch"
+    url: https://www.instagram.com/humans_of_taisch/

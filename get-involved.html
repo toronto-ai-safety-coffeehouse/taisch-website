@@ -1,10 +1,12 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TAISCH team." />
-    <title>TAISCH — Team</title>
+    <meta name="description" content="Get involved with TAISCH." />
+    <title>TAISCH — Get Involved</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,6 +19,7 @@
       <nav class="topbar-links">
         <a class="topbar-link" href="about.html">About Us</a>
         <a class="topbar-link" href="events.html">Events</a>
+        <a class="topbar-link" href="get-involved.html">Get Involved</a>
         <a class="topbar-link" href="contact.html">Contact</a>
         <a class="topbar-link topbar-icon" href="https://www.instagram.com/humans_of_taisch/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
@@ -29,10 +32,16 @@
         </a>
       </nav>
     </header>
-    <main class="team-page">
-      <h1>Ciaran Neely</h1>
-      <h1>Nicole Evans</h1>
-      <h1>Luke Léveillé</h1>
+    <main class="contact-page">
+      <div class="contact-page-inner">
+        <p class="eyebrow">{{ site.data.get_involved.eyebrow }}</p>
+        <h1>{{ site.data.get_involved.title }}.</h1>
+        <p class="contact-lede">{{ site.data.get_involved.body }}</p>
+        <a class="button button-primary" href="{{ site.data.get_involved.form_url }}" target="_blank" rel="noopener">
+          <span>{{ site.data.get_involved.button_text }}</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
     </main>
   </body>
 </html>

@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,6 +19,7 @@
       <nav class="topbar-links">
         <a class="topbar-link" href="about.html">About Us</a>
         <a class="topbar-link" href="events.html">Events</a>
+        <a class="topbar-link" href="get-involved.html">Get Involved</a>
         <a class="topbar-link" href="contact.html">Contact</a>
         <a class="topbar-link topbar-icon" href="https://www.instagram.com/humans_of_taisch/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
@@ -32,30 +35,21 @@
     <main class="contact-page">
       <div class="contact-page-inner">
         <h1>About Us</h1>
+        <div class="about-copy">
+          {{ site.data.about.main_about | markdownify }}
+        </div>
         <div class="team-section">
           <p class="eyebrow">The Team</p>
           <div class="team-grid">
+            {% for person in site.data.about.team %}
             <div class="profile-card">
-              <div class="profile-avatar">CN</div>
+              <div class="profile-avatar">{{ person.initials }}</div>
               <div class="profile-text">
-                <p class="profile-name">Ciaran Neely</p>
-                <p class="profile-title">Founder & Curator</p>
+                <p class="profile-name">{{ person.name }}</p>
+                <p class="profile-title">{{ person.title }}</p>
               </div>
             </div>
-            <div class="profile-card">
-              <div class="profile-avatar">NE</div>
-              <div class="profile-text">
-                <p class="profile-name">Nicole Evans</p>
-                <p class="profile-title">Curator</p>
-              </div>
-            </div>
-            <div class="profile-card">
-              <div class="profile-avatar">LL</div>
-              <div class="profile-text">
-                <p class="profile-name">Luke Léveillé</p>
-                <p class="profile-title">Curator</p>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>

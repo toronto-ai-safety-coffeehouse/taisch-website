@@ -108,13 +108,9 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
 .construction-art { background: url("images/taisch-aodhan.jpg") center/cover no-repeat; height: 100%; }
 .construction-content { align-items: center; background: var(--paper); display: flex; flex-direction: column; justify-content: center; padding: 40px; position: relative; text-align: center; }
 .hero-copy { transform: translateY(-96px); }
-.sponsor-strip { bottom: 40px; left: 0; position: absolute; right: 0; text-align: center; }
-.sponsor-strip .eyebrow { margin: 0 0 16px; }
-.sponsor-logos { align-items: center; display: flex; gap: 32px; justify-content: center; }
-.sponsor-logos img { height: 36px; width: auto; }
-.sponsor-logos img.sponsor-logo-tl { height: 58px; }
 .construction-brand { color: var(--orange); font: 500 clamp(1rem, 2vw, 1.4rem) var(--mono); letter-spacing: .1em; margin-bottom: 34px; text-transform: uppercase; }
 .construction-page h1 { font-size: clamp(3rem, 6vw, 6.5rem); font-weight: 500; letter-spacing: -.07em; line-height: .9; margin: 0; max-width: 600px; }
+.construction-page .tagline { color: var(--muted); font: 500 clamp(1rem, 1.6vw, 1.2rem) var(--mono); margin: 28px auto 0; max-width: 460px; }
 
 @media (max-width: 720px) {
   .construction-page { display: flex; flex-direction: column; height: calc(100vh - 60px); }
@@ -122,14 +118,7 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
   .construction-content { flex: 1; min-height: 0; padding: 30px 20px 80px; }
   .construction-page h1 { font-size: clamp(3rem, 13vw, 5rem); }
   .hero-copy { transform: translateY(-40px); }
-  .sponsor-strip { bottom: 24px; }
-  .sponsor-logos { gap: 22px; }
-  .sponsor-logos img { height: 28px; }
-  .sponsor-logos img.sponsor-logo-tl { height: 44px; }
 }
-
-.team-page { align-items: center; display: flex; flex-direction: column; justify-content: center; min-height: calc(100vh - 70px); padding: 40px 20px; }
-.team-page h1 { font-size: clamp(2.5rem, 7vw, 7rem); font-weight: 500; letter-spacing: -.07em; line-height: .95; margin: 0; text-align: center; }
 
 .contact-page { align-items: center; display: flex; justify-content: center; min-height: calc(100vh - 70px); padding: 60px 20px 90px; text-align: center; }
 .contact-page-inner { max-width: 720px; }
@@ -148,6 +137,11 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
   .contact-grid { grid-template-columns: 1fr; text-align: center; }
   .contact-socials { justify-content: center; }
 }
+
+.about-copy { text-align: left; }
+.about-copy p { color: var(--muted); font-size: 1.05rem; line-height: 1.65; margin: 0 0 22px; }
+.about-copy p:last-child { margin-bottom: 0; }
+.about-copy em { color: var(--ink); }
 
 .team-section { border-top: 1px solid var(--line); margin-top: 50px; padding-top: 50px; }
 .team-section .eyebrow { color: var(--muted); font: 500 .72rem var(--mono); letter-spacing: .08em; margin: 0 0 34px; text-transform: uppercase; }
@@ -170,6 +164,7 @@ body:has(.topbar) { padding-top: 70px; }
 .topbar-brand { color: var(--orange); }
 .topbar-link { color: var(--ink); }
 .topbar-brand:hover, .topbar-link:hover { color: var(--orange); }
+.topbar-link:hover { color: var(--orange); }
 .topbar-icon { display: inline-flex; }
 .topbar-icon svg { display: block; }
 
