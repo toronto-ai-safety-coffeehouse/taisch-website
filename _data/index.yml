@@ -1,2 +1,12 @@
 title: The Toronto AI Safety Coffeehouse
 tagline: A community of artists working toward a future of human flourishing in the face of AI.
+
+sponsors:
+  - name: Trajectory Labs
+    url: https://www.trajectorylabs.org/
+    logo: images/TL_logo.png
+    logo_class: sponsor-logo-tl
+  - name: Kynective
+    url: https://kynectivemedia.com/
+    logo: images/Kynective-logo-website-blue.svg
+    logo_class: sponsor-logo-kyn
