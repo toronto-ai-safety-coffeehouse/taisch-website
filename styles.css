@@ -110,7 +110,7 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
 .hero-copy { transform: translateY(-96px); }
 .construction-brand { color: var(--orange); font: 500 clamp(1rem, 2vw, 1.4rem) var(--mono); letter-spacing: .1em; margin-bottom: 34px; text-transform: uppercase; }
 .construction-page h1 { font-size: clamp(3rem, 6vw, 6.5rem); font-weight: 500; letter-spacing: -.07em; line-height: .9; margin: 0; max-width: 600px; }
-.construction-page .tagline { color: var(--muted); font: 500 clamp(1rem, 1.6vw, 1.2rem) var(--mono); margin: 28px auto 0; max-width: 460px; }
+.construction-page .tagline { color: var(--muted); font: 500 clamp(1.15rem, 2vw, 1.4rem) var(--mono); margin: 28px auto 0; max-width: 500px; }
 
 @media (max-width: 720px) {
   .construction-page { display: flex; flex-direction: column; height: auto; min-height: calc(100vh - 60px); }
@@ -119,7 +119,7 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
   .hero-copy { transform: none; }
   .construction-brand { margin-bottom: 20px; }
   .construction-page h1 { font-size: clamp(2.2rem, 10vw, 3.4rem); }
-  .construction-page .tagline { font-size: .95rem; margin-top: 20px; }
+  .construction-page .tagline { font-size: 1.1rem; margin-top: 20px; }
 }
 
 .contact-page { align-items: center; display: flex; justify-content: center; min-height: calc(100vh - 70px); padding: 60px 20px 90px; text-align: center; }
