@@ -113,11 +113,13 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
 .construction-page .tagline { color: var(--muted); font: 500 clamp(1rem, 1.6vw, 1.2rem) var(--mono); margin: 28px auto 0; max-width: 460px; }
 
 @media (max-width: 720px) {
-  .construction-page { display: flex; flex-direction: column; height: calc(100vh - 60px); }
-  .construction-art { flex: 0 0 54%; height: auto; }
-  .construction-content { flex: 1; min-height: 0; padding: 30px 20px 80px; }
-  .construction-page h1 { font-size: clamp(3rem, 13vw, 5rem); }
-  .hero-copy { transform: translateY(-40px); }
+  .construction-page { display: flex; flex-direction: column; height: auto; min-height: calc(100vh - 60px); }
+  .construction-art { flex: 0 0 auto; height: 45vh; }
+  .construction-content { flex: 1; justify-content: flex-start; padding: 36px 20px 48px; }
+  .hero-copy { transform: none; }
+  .construction-brand { margin-bottom: 20px; }
+  .construction-page h1 { font-size: clamp(2.2rem, 10vw, 3.4rem); }
+  .construction-page .tagline { font-size: .95rem; margin-top: 20px; }
 }
 
 .contact-page { align-items: center; display: flex; justify-content: center; min-height: calc(100vh - 70px); padding: 60px 20px 90px; text-align: center; }
@@ -167,9 +169,15 @@ body:has(.topbar) { padding-top: 70px; }
 .topbar-link:hover { color: var(--orange); }
 .topbar-icon { display: inline-flex; }
 .topbar-icon svg { display: block; }
+.topbar-socials { align-items: center; display: flex; gap: 26px; }
+.topbar-toggle { background: none; border: 0; color: var(--ink); cursor: pointer; display: none; margin-right: -10px; padding: 10px; }
+.topbar-toggle svg { display: block; }
 
 @media (max-width: 720px) {
   body:has(.topbar) { padding-top: 60px; }
   .topbar { height: 60px; padding: 0 20px; }
-  .topbar-links { gap: 14px; }
+  .topbar-toggle { display: block; }
+  .topbar-links { align-items: flex-start; background: var(--paper); border-bottom: 1px solid var(--line); box-sizing: border-box; display: none; flex-direction: column; gap: 22px; left: 0; padding: 24px 20px 28px; position: absolute; right: 0; top: 60px; }
+  .topbar-links.is-open { display: flex; }
+  .topbar-socials { gap: 22px; padding-top: 4px; }
 }
