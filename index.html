@@ -23,6 +23,17 @@
           <h1>{{ site.data.index.title }}</h1>
           <p class="tagline">{{ site.data.index.tagline }}</p>
         </div>
+        <div class="sponsor-strip">
+          <p class="eyebrow">Sponsored by</p>
+          <div class="sponsor-logos">
+            {% assign sponsors = site.data.index.sponsors | where: "name", "Kynective" %}
+            {% for sponsor in sponsors %}
+            <a href="{{ sponsor.url }}" target="_blank" rel="noopener">
+              <img class="{{ sponsor.logo_class }}" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+            </a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </main>
   </body>
