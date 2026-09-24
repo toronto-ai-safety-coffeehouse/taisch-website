@@ -23,16 +23,6 @@
           <h1>{{ site.data.index.title }}</h1>
           <p class="tagline">{{ site.data.index.tagline }}</p>
         </div>
-        <div class="sponsor-strip">
-          <p class="eyebrow">Supported by</p>
-          <div class="sponsor-logos">
-            {% for sponsor in site.data.index.sponsors %}
-            <a href="{{ sponsor.url }}" target="_blank" rel="noopener">
-              <img class="{{ sponsor.logo_class }}" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
-            </a>
-            {% endfor %}
-          </div>
-        </div>
       </div>
     </main>
   </body>
