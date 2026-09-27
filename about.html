@@ -26,7 +26,11 @@
           <div class="team-grid">
             {% for person in site.data.about.team %}
             <div class="profile-card">
+              {% if person.photo %}
+              <div class="profile-avatar profile-avatar-photo"><img src="{{ person.photo }}" alt="{{ person.name }}" /></div>
+              {% else %}
               <div class="profile-avatar">{{ person.initials }}</div>
+              {% endif %}
               <div class="profile-text">
                 <p class="profile-name">{{ person.name }}</p>
                 <p class="profile-title">{{ person.title }}</p>

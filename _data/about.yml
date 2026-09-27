@@ -8,10 +8,10 @@ main_about: |
 team:
   - name: Ciaran Neely
     title: Founder & Curator
-    initials: CN
+    photo: images/headshots/ciaran.jpg
   - name: Nicole Evans
     title: Curator
-    initials: NE
+    photo: images/headshots/nicole.jpg
   - name: Luke Léveillé
     title: Curator
-    initials: LL
+    photo: images/headshots/luke.jpg

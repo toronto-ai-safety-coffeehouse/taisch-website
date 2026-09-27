@@ -1,2 +1,5 @@
 scratchpad.txt
 _site/
+vendor/
+.bundle/
+.jekyll-cache/

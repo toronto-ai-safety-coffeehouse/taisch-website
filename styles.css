@@ -156,16 +156,17 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
 
 .team-section { border-top: 1px solid var(--line); margin-top: 50px; padding-top: 50px; }
 .team-section .eyebrow { color: var(--muted); font: 500 .72rem var(--mono); letter-spacing: .08em; margin: 0 0 34px; text-transform: uppercase; }
-.team-grid { display: grid; gap: 40px; grid-template-columns: repeat(3, minmax(0, 160px)); justify-content: center; }
+.team-grid { display: grid; gap: 40px; grid-template-columns: repeat(3, minmax(0, 200px)); justify-content: center; }
 .profile-card { align-items: center; display: flex; flex-direction: column; gap: 16px; }
-.profile-avatar { align-items: center; background: var(--orange); border-radius: 50%; color: var(--white); display: flex; font: 600 1.3rem var(--display); height: 84px; justify-content: center; letter-spacing: -.02em; width: 84px; }
+.profile-avatar { align-items: center; background: var(--orange); border-radius: 50%; color: var(--white); display: flex; font: 600 1.8rem var(--display); height: 140px; justify-content: center; letter-spacing: -.02em; overflow: hidden; width: 140px; }
+.profile-avatar-photo img { height: 100%; object-fit: cover; width: 100%; }
 .profile-text { display: flex; flex-direction: column; gap: 1px; }
 .profile-name { font-size: 1.02rem; font-weight: 500; margin: 0; }
 .profile-title { color: var(--muted); font-size: .82rem; margin: 0; }
 
 @media (max-width: 720px) {
-  .team-grid { grid-template-columns: repeat(3, minmax(0, 100px)); gap: 16px; }
-  .profile-avatar { height: 72px; width: 72px; font-size: 1.1rem; }
+  .team-grid { grid-template-columns: repeat(3, minmax(0, 110px)); gap: 16px; }
+  .profile-avatar { height: 96px; width: 96px; font-size: 1.3rem; }
 }
 
 body:has(.topbar) { padding-top: 70px; }
