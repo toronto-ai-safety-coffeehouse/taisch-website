@@ -133,6 +133,8 @@ h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); font-weight: 500; letter-spacing: 
 
 .contact-page { align-items: center; display: flex; justify-content: center; min-height: calc(100vh - 70px); padding: 60px 20px 90px; text-align: center; }
 .contact-page-inner { max-width: 720px; }
+.events-page .contact-page-inner { width: 100%; max-width: 860px; }
+.luma-embed { background: #fff; border: 1px solid var(--line); border-radius: 12px; display: block; height: 650px; width: 100%; }
 .contact-page .eyebrow { color: var(--muted); font: 500 .72rem var(--mono); letter-spacing: .08em; margin: 0 0 18px; text-transform: uppercase; }
 .contact-page h1 { font-size: clamp(2.8rem, 6vw, 5.2rem); font-weight: 500; letter-spacing: -.06em; line-height: .95; margin: 0 0 22px; }
 .contact-lede { color: var(--muted); font-size: 1.05rem; line-height: 1.6; margin: 0 auto 60px; max-width: 480px; }
